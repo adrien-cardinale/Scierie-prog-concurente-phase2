@@ -1,9 +1,9 @@
 #include "simulation.hpp"
 
 Simulation::Simulation():foret(), usine(), transporteur(std::ref(usine), std::ref(foret)){
-    foret.parkingRemplissageBenne.push_back(std::make_unique<Benne>(0));
-    usine.parkingExtractionBenne.push_back(std::make_unique<Benne>(2));
-    foret.parkingTransportBenne.push_back(std::make_unique<Benne>(2));
+    foret.parkingRemplissageBenne.push_back(std::make_unique<Benne>(1));
+    usine.parkingExtractionBenne.push_back(std::make_unique<Benne>(1));
+    foret.parkingTransportBenne.push_back(std::make_unique<Benne>(1));
 }
 
 void Simulation::start(){

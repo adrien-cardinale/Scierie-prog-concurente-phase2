@@ -1,12 +1,11 @@
 #include "superTimer.hpp"
 
-std::mutex m;
 std::condition_variable benneDisponibleBucheron;
 std::condition_variable benneDisponibleTransporteurForet;
 std::condition_variable benneDisponibleTransporteurUsine;
 std::condition_variable benneDisponibleExtraction;
 
-SuperTimer::SuperTimer():tempsEcoule(480),heures(0),minutes(0),jours(0){}
+SuperTimer::SuperTimer():tempsEcoule(0),heures(0),minutes(0),jours(0){}
 
 void SuperTimer::count(){
     while(true){

@@ -249,8 +249,14 @@ void SuperAffichage::updateOuvrier(int etat){
         }case 9:{
             textOuvrier.setString("Retourne a l'usine");
             break;
+        }case 10:{
+            textOuvrier.setString("discute avec le client");
+            break;
         }case 11:{
-            textOuvrier.setString("");
+            textOuvrier.setString("va chercher une planche au stock");
+            break;
+        }case 12:{
+            textOuvrier.setString("Emmene les planches au client");
             break;
         }
     }
